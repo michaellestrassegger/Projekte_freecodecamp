@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Styled To-Do List</title>
+    <style>
+      .sub-item-link{
+  text-decoration: none;
+}
+
+a:link {
+  color: green;
+} 
+
+a:visited{
+  color: blue;
+}
+
+a:hover{
+  color: pink;
+}
+
+a:focus{
+  color: orange;
+  outline: 2px orange;
+}
+a:active{
+  color: purple;
+} 
+    </style>
+</head>
+
+<body>
+    <h1>To Dos Oktober</h1>
+    <ul class="todo-list">
+        <li>
+            <input type="checkbox" id="cleaning">
+            <label for="cleaning">Cleaning done</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" href="https://www.freecodecamp.org/learn/full-stack-developer/lab-stylized-to-do-list/build-a-stylized-to-do-list" target="_blank">Cleaning Plan</a>
+        </li>
+           </ul>
+           <li>
+            <input type="checkbox" id="weels">
+            <label for="weels">Winter weels</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" href="https://www.freecodecamp.org/learn/full-stack-developer/lab-stylized-to-do-list/build-a-stylized-to-do-list" target="_blank">Mecanic</a>
+        </li>
+           </ul>
+           <li>
+            <input type="checkbox" id="clothes">
+            <label for="clothes">Hang up Clothes</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" href="https://www.freecodecamp.org/learn/full-stack-developer/lab-stylized-to-do-list/build-a-stylized-to-do-list" target="_blank">Washing Maschine</a>
+        </li>
+           </ul>
+           <li>
+            <input type="checkbox" id="cook">
+            <label for="cook">Cook</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" href="https://www.freecodecamp.org/learn/full-stack-developer/lab-stylized-to-do-list/build-a-stylized-to-do-list" target="_blank">Recipe Book</a>
+        </li>
+           </ul>
+    </ul>
+</body>
+</html>
