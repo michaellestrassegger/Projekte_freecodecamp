@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Choose the perfect pet!</h1>
+      <p id="description">We want to help you to choose your perfect new friend.</p>
+      <form id="survey-form">
+        <fieldset>
+          <legend id="about-you">About you:</legend>
+          <label for="name" id="name-label">Name</label>
+          <input
+            required
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Name Fullname">
+          <label id="email-label">Email</label>
+          <input
+            required
+            id="email"
+            name="email"
+            type="email"
+            placeholder="email@email.com">
+          <label id="number-label">Age</label>
+          <input
+            id="number"
+            name="age"
+            type="number"
+            min="16"
+            max="100"
+            placeholder="Age">
+        </fieldset>
+
+        <fieldset>
+          <legend id="favorite-pets">Whats your favorite Pets?</legend>
+          <label id="past-pets">Which pets did you have?</label>
+          <select id="dropdown" name="past-pets">
+            <option value="none">None</option>
+            <option value="small-pet">Small pet</option>
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+            <option selected value="various">Various</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend id="location">Where do you live?</legend>
+          <label id="house" name="location">House</label>
+          <input
+            type="radio"
+            name="location"
+            value="house"
+            id="house">
+          <label id="flat" name="location">Flat</label>
+          <input
+            type="radio"
+            name="location"
+            value="flat"
+            id="flat">
+          <label id="wg" name="location">WG</label>
+          <input
+            type="radio"
+            name="location"
+            value="wg"
+            id="wg">
+          <label id="none" name="location">None of the Options</label>
+          <input
+            type="radio"
+            name="location"
+            value="none"
+            id="none">
+        </fieldset>
+        <fieldset>
+          <legend id="animals">Which animals do you like?</legend>
+          <label id="dogs" name="animals">Dogs</label>
+            <input
+              type="checkbox"
+              id="dogs"
+              value="animals"
+              name="animals">
+          <label id="cats" name="animals">Cats</label>
+          <input
+            type="checkbox"
+            id="cats"
+            value="animals"
+            name="animals">
+          <label id="exotic" name="animals">Exotic Animals</label>
+          <input
+            type="checkbox"
+            id="exotic"
+            value="animals"
+            name="animals">
+          <label id="small" name="animals">Small Animals</label>
+          <input
+            type="checkbox"
+            id="small"
+            value="animals"
+            name="animals">
+        </fieldset>
+          <label for="comments" id="comments" name="comments">Good to know:</label>
+          <textarea row="10" cols="30" name="comments" id="comments"></textarea>
+
+        <input type="submit"id="submit"></input>
+    </form>
+  </body>
+</html>
